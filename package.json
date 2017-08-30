@@ -1,7 +1,7 @@
 {
-  "name": "tushare",
-  "version": "0.3.1",
-  "description": "port of tushare for nodejs",
+  "name": "financial-data-loader",
+  "version": "0.1.0",
+  "description": "An engine to grab financial data from various sources",
   "main": "lib/index.js",
   "scripts": {
     "test": "node ./node_modules/ava/cli.js --verbose test/*",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruanyl/tushare.js.git"
+    "url": "git+https://github.com/ruanyl/financial-data-loader.js.git"
   },
   "keywords": [
     "github",
@@ -22,9 +22,9 @@
   "author": "Ruan Yulong <ruanyu1@gmail.com> (http://github.com/ruanyl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ruanyl/tushare.js/issues"
+    "url": "https://github.com/ruanyl/financial-data-loader.js/issues"
   },
-  "homepage": "https://github.com/ruanyl/tushare.js#readme",
+  "homepage": "https://github.com/ruanyl/financial-data-loader.js#readme",
   "dependencies": {
     "async": "^2.4.1",
     "iconv-lite": "^0.4.15",
