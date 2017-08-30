@@ -1,0 +1,9 @@
+node_modules
+.env
+dist
+lib
+libexample
+.idea
+*.iml
+coverage
+.nyc_output
