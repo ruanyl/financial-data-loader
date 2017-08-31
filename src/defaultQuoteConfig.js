@@ -16,7 +16,7 @@ export const klineTTMinUrl = (symbol, ktype) =>
 
 /**
  * String -> Number
- * @param {String} dateString - a date string formatted with 'YYYY-MM-DD', for example: '2017-12-31'
+ * @param {String} dateString - a date string formatted with 'YYYYMMDD', for example: '20171231'
  * @returns {Number} year in number, for example: 2017
  */
 const yearOfDateString = compose(multiply(1), take(4));
