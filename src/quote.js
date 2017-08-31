@@ -1,14 +1,9 @@
+import { map } from 'ramda';
+
 import defaultConfig from './defaultQuoteConfig';
 import { load } from './loader';
 
-export const quote = (config = defaultConfig) => {
-  const getKData = options => {
-    const resources = config.getKData.createResources(options);
-    return load(resources)
-    .then(config.getKData.transform(options));
-  };
-
-  return {
-    getKData,
-  };
-};
+export const quote = (config = defaultConfig) =>
+  map(v => options =>
+    load(v.createResources(options))
+    .then(v.transform(options)), config);

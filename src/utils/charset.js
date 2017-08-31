@@ -2,7 +2,7 @@
 /* eslint-disable import/newline-after-import */
 export const charset = enc => res => {
   // if under nodejs environment
-  if (typeof module !== undefined && module.exports) {
+  if (typeof module !== 'undefined' && module.exports) {
     const iconv = require('iconv-lite');
     return res.buffer().then(buffer => iconv.decode(buffer, enc));
   }
